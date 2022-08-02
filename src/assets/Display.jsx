@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Textfit } from 'react-textfit';
 
 export default function Display(props) {
   return (
-    <div className='display'>
+    <Textfit mode='single' className='display'>
       {props.value}
-    </div>
+    </Textfit>
   )
 }
