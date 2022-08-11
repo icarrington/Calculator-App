@@ -16,7 +16,7 @@ function App() {
     }else if (buttonText === '=') {
 
       try {
-        const result = eval(expression);
+        let result = eval(expression);
         setValue(result);
         setExpression(result);
       } catch (err){

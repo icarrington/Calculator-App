@@ -25,15 +25,25 @@
   display: grid;
   grid-template-columns: repeat(4, 1fr);
   height: 80%;
+  width: 100%;
 }
 
 .key {
   border: solid black 1px;
   font-size: 2rem;
+  max-width: 100%;
+  padding: 0.125rem 0.5rem;
 }
 
 .equals{
   grid-column: 1 / span 4;
   background-color: orange;
   border-radius: 0 0 15px 15px;
+}
+
+@media screen and (max-width: 500px) {
+  .app {
+    width: 250px;
+  }
+  
 }
